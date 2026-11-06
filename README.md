@@ -19,3 +19,15 @@ npm start
 - `server.js`: 로컬 HTTP 서버
 
 사진과 Google Fonts는 외부 서비스를 사용하므로 인터넷 연결이 필요합니다. 예시 사진과 이메일은 본인의 정보로 교체하세요.
+
+## Vercel 배포
+
+Vercel에서는 `vercel.json` 설정에 따라 `npm run build`를 실행하고 `dist` 폴더의 HTML과 CSS를 정적 파일로 제공합니다. 로컬 실행에는 계속 `npm start`를 사용합니다.
+
+- Git 저장소: `suky1014/myprofile-test`, Production 브랜치: `main`
+- Root Directory: 저장소 최상위 (기본값)
+- Framework Preset: `Other`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+GitHub 연동이 활성화되어 있으면 Push 후 자동 배포됩니다. 수동 재배포 시에는 수정 커밋이 포함된 최신 배포를 선택하세요.

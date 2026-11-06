@@ -4,6 +4,7 @@
   "private": true,
   "description": "개인 프로필 웹사이트",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "node scripts/build.js"
   }
 }
